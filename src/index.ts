@@ -32,4 +32,4 @@ function cb() {
 
 const job = new CronJob(cronTime, cb, null, null, null, null, null, utc)
 
-bot.run()
+job.start()

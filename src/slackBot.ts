@@ -87,7 +87,7 @@ export default class SlackBot {
 
   async browseChannels(): Promise<void> {
     try {
-      logger.info(`clicking in sidebar the channel ${this.channel}`)
+      logger.info(`clicking the channel ${this.channel} in sidebar`)
 
       await this.page.click(
         `span[data-qa="channel_sidebar_name_${this.channel}"]`
