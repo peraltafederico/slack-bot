@@ -2,13 +2,12 @@
   "name": "slack-bot",
   "version": "1.0.0",
   "description": "",
-  "main": ".eslintrc.js",
+  "main": ".src/index.ts",
   "dependencies": {
     "cron": "^1.8.2",
     "dotenv": "^8.2.0",
     "moment": "^2.27.0",
     "puppeteer": "^5.2.1",
-    "webpack-node-externals": "^2.5.0",
     "winston": "^3.3.3"
   },
   "devDependencies": {
@@ -29,10 +28,11 @@
     "ts-loader": "^8.0.2",
     "typescript": "^3.9.7",
     "webpack": "^4.44.1",
-    "webpack-cli": "^3.3.12"
+    "webpack-cli": "^3.3.12",
+    "webpack-node-externals": "^2.5.0"
   },
   "scripts": {
-    "build": "webpack",
+    "build": "webpack --config webpack.config.js",
     "start": "node dist/main.js"
   },
   "repository": {
