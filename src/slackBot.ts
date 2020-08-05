@@ -123,7 +123,7 @@ export default class SlackBot {
 
   async run(): Promise<void> {
     this.browser = await puppeteer.launch({
-      args: [
+      args: [ 
         '--no-sandbox',
         '--disable-setuid-sandbox',
       ],
