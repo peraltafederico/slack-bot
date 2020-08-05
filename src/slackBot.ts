@@ -122,7 +122,12 @@ export default class SlackBot {
   }
 
   async run(): Promise<void> {
-    this.browser = await puppeteer.launch({ ignoreDefaultArgs: ['--disable-extensions'] })
+    this.browser = await puppeteer.launch({
+      args: [
+        '--no-sandbox',
+        '--disable-setuid-sandbox',
+      ],
+    })
     this.page = await this.browser.newPage()
 
     await this.chooseWorkspace()
