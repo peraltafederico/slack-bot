@@ -1,3 +1,3 @@
 # slack-bot
 
-Send and automatic message to slack channel by impersonating
+Send an automatic and configurable message to slack channel by impersonating
