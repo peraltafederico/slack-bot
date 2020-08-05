@@ -9,7 +9,8 @@
     "moduleResolution": "node",
     "outDir": "./dist",
     "rootDir": ".",
-    "allowSyntheticDefaultImports": true
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": "./",
   },
   "include": ["src"],
   "exclude": ["node_modules", "dist"]

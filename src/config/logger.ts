@@ -1,10 +1,10 @@
-import winston from 'winston'
+import { transports, createLogger } from 'winston'
 import { format } from 'winston'
 import moment from 'moment'
 
 const { combine, timestamp, colorize, json } = format
 
-export const logger = winston.createLogger({
+export const logger = createLogger({
   level: 'info',
   format: combine(
     timestamp({
@@ -20,5 +20,5 @@ export const logger = winston.createLogger({
       },
     })
   ),
-  transports: [new winston.transports.Console()],
+  transports: [new transports.Console()],
 })
