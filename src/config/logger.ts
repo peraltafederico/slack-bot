@@ -1,6 +1,6 @@
 import { transports, createLogger } from 'winston'
 import { format } from 'winston'
-import moment from 'moment'
+import * as moment from 'moment'
 
 const { combine, timestamp, colorize, json } = format
 

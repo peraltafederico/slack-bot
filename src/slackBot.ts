@@ -1,5 +1,5 @@
 import { Page, Browser } from 'puppeteer'
-import puppeteer from 'puppeteer'
+import * as puppeteer from 'puppeteer'
 import { logger } from './config/logger'
 
 export default class SlackBot {
