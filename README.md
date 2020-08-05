@@ -1,3 +1,3 @@
 # slack-bot
 
-Forget about say "hello" at 9 am in slack channel
+Send and automatic message to slack channel by impersonating
